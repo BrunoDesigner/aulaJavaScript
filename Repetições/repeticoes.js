@@ -16,8 +16,18 @@ while (cont <= 6 ) {
 }
 */
 
-do{
+/*do{
     console.log('top')
     cont++
 }while(cont<=6)
+*/
+
+var brasil = 1 
+
+while (brasil < 7){
+    console.log('levando uma Taca')
+    brasil++
+} if (brasil = 7){
+    console.log('Finalmente')
+}
 
