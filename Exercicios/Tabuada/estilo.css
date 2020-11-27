@@ -18,22 +18,6 @@ section {
     box-shadow: 3px 5px 15px rgba( rgb(0, 0, 0, 0.50));
 }
 
-
-
-
-#inicio{
-    margin: auto;
-}
-
-#fim{
-    margin: 15px;
-}
-
-#passo{
-    margin: 12px;
-}
-
-
 section,h3{
     color: #464343;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

@@ -8,7 +8,9 @@ function start(){
 
     if (iniciar.value.length == 0 || finalizar.value.length == 0 || cont.value.length == 0){
         window.alert('Valor não definido')
-    }else {
+        
+        
+    } else {
 
         res.innerHTML = `Contando:`
         let i = Number(iniciar.value)
@@ -20,6 +22,7 @@ function start(){
             if(r==f){
                 res.innerHTML += `🏴‍☠️`
             }
+                
         }
         
     }
