@@ -30,20 +30,39 @@ function add(){
     }else{
         window.alert('Já contem ou o Numero é invalido')
     }
-    
+    num.value = ''
+    num.focus()
 }
 
 function calcular(){
-    let menor = 0
-    let maior = Math.max.apply(valor)
-    if(menor < maior ){
-        console.log(maior)
+    if(valor.length == 0 ){
+        window.alert('Adicione Valores a Tabela')
+    }else{
+   
+    let tot = valor.length    
+    let maior = valor[0]
+    let menor = valor[0]
+    let soma = 0
+    let media = 0
+   for (let pos in valor){
+        soma += valor[pos]
+        media += soma/tot
+        if(maior < valor[pos]){
+            maior = valor[pos]
+        }
+        if(valor[pos]< menor){
+            menor = valor[pos]
+        }
+        if(soma + valor[pos]){
 
-
-
-
-         
+        }
+        res.innerHTML = ''
+        res.innerHTML += `<p>A Soma dos numeros cadastrados  é ${soma}</p>`
+        res.innerHTML += `<p>O total de Numeros Cadastrasdos é ${tot}</p>`
+        res.innerHTML += `<p>A Media dos Valores é ${media}</p>`
+        res.innerHTML += `<p> O menor Valor é ${menor} </p>`
+        res.innerHTML += `<p> O maior Valor é ${maior} </p>`
     }
-    res.innerHTML = valor.length
+   }
     
 }
